@@ -10,19 +10,17 @@ import UIKit
 
 
 class FallDetectionViewController: UIViewController {
-
-    @IBOutlet var slideToUnlock: UISlider!
-    var UNLOCK : Bool = false
     
-    @IBAction func startFallDetection(_ sender: Any) {
-        if !UNLOCK {
-            if self.slideToUnlock.value == 1 {
-                self.slideToUnlock.isHidden = true
-                self.UNLOCK = true
-                
-            }
+    @IBAction func `switch`(_ sender: UISwitch) {
+        if(sender.isOn == true){
+            print("start detection")
+        }else{
+            print("detection ended")
         }
+        
     }
+    
+    
     
     
     

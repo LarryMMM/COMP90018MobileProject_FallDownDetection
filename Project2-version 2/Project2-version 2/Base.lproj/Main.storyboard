@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Fifth View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="UdK-gF-8BB">
             <objects>
-                <viewController id="00U-h5-OYd" customClass="FifthViewController" customModule="Project2_version_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="00U-h5-OYd" customClass="SignUpViewController" customModule="Project2_version_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tBG-2Z-idu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,12 +68,12 @@
                         <viewLayoutGuide key="safeArea" id="t2A-sa-EBW"/>
                     </view>
                     <connections>
-                        <outlet property="emailAddress" destination="Ctc-dc-sV7" id="a3A-Sc-eWT"/>
-                        <outlet property="password" destination="CgS-cp-gen" id="ivc-aV-pgE"/>
-                        <outlet property="passwordConfirmation" destination="IWg-RJ-LC9" id="IuV-mh-7Ko"/>
-                        <outlet property="phoneNumber" destination="hnH-Ba-LES" id="mAg-cu-2f7"/>
-                        <outlet property="register" destination="yhh-5L-qQL" id="G3v-VA-hDn"/>
-                        <outlet property="userName" destination="4oh-uv-Qaw" id="cHT-GL-did"/>
+                        <outlet property="btnRegister" destination="yhh-5L-qQL" id="x7X-6v-dVJ"/>
+                        <outlet property="txtEmailAddress" destination="Ctc-dc-sV7" id="VEF-Ic-ukt"/>
+                        <outlet property="txtPassword" destination="CgS-cp-gen" id="ill-Q4-oc6"/>
+                        <outlet property="txtPasswordConfirmation" destination="IWg-RJ-LC9" id="uA2-lY-pTC"/>
+                        <outlet property="txtPhoneNumber" destination="hnH-Ba-LES" id="iCJ-ac-atU"/>
+                        <outlet property="txtUserName" destination="4oh-uv-Qaw" id="voc-N7-L4K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TvZ-d5-trP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -329,7 +329,7 @@
                                 <rect key="frame" x="305" y="63" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="startFallDetection:" destination="bCg-h0-q8I" eventType="valueChanged" id="J0T-EY-07f"/>
+                                    <action selector="switch:" destination="bCg-h0-q8I" eventType="valueChanged" id="dSW-lM-1uP"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Detection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHL-BV-sKv">
@@ -339,17 +339,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zLS-pF-VMJ">
-                                <rect key="frame" x="116" y="152" width="118" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="6Of-gJ-sVZ"/>
                     </view>
-                    <connections>
-                        <outlet property="slideToUnlock" destination="zLS-pF-VMJ" id="PwY-zw-JsR"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQQ-LR-sw8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -439,6 +432,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eO3-vf-Yq6"/>
+        <segue reference="u6t-VL-J29"/>
     </inferredMetricsTieBreakers>
 </document>
